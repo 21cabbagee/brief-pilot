@@ -7,6 +7,7 @@ import TriageGrid from './components/TriageGrid';
 import PreDraftsInbox from './components/PreDraftsInbox';
 import TimeSavedCalculator from './components/TimeSavedCalculator';
 import CabModal from './components/CabModal';
+import OutcomeChart from './components/OutcomeChart';
 import Footer from './components/Footer';
 import { sampleBriefPresets } from './data/briefPresets';
 import { synthesizeMorningBrief } from './utils/briefSynthesizer';
@@ -42,6 +43,11 @@ export default function App() {
         <Hero
           openCabModal={() => setIsCabModalOpen(true)}
         />
+
+        {/* Julien Bek $1:$6 Sequoia Framework + Bklit UI Outcome Engine */}
+        <section className="px-4 sm:px-6 lg:px-8">
+          <OutcomeChart onCtaClick={() => setIsCabModalOpen(true)} />
+        </section>
 
         {/* Dashboard Workspace */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">

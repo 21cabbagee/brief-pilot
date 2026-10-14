@@ -12,11 +12,13 @@ import {
   TrendingUp,
   Inbox
 } from 'lucide-react';
+import ParticlesCanvas from './ParticlesCanvas';
 
 export default function Hero({ openCabModal }) {
   return (
     <div className="relative pt-8 pb-12 overflow-hidden border-b border-slate-800/60 bg-radial-pilot">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ParticlesCanvas color="59, 130, 246" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* SEO Long-Tail Keyword Badges */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-5">
